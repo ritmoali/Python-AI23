@@ -1,0 +1,65 @@
+Data types
+String (text)
+Int (integer, sv. heltal)
+Float (floating point, sv. flyttal (decimaltal))
+Bool (boolean, True/False)
+myString = "Fredrik"
+print(myString)
+
+myInt = 8
+print(myInt)
+
+myFloat = 3.14
+print(myFloat)
+
+myBool = True
+print(myBool)
+
+type(myInt)
+Fredrik
+8
+3.14
+True
+int
+Literal values
+"Hello" - String. Can use single or double quotes. Case-sensitive.
+5 - Integer
+4.5 Float
+True Bool. Can be True or False
+Variables
+Case-senstive
+Created when first assigned, doesn't need to be declared.
+Dynamic typing, type is referred from assignment, can be re-typed.
+Cast type with: str(), int(), float(), bool()
+Get type with: type()
+Use del() to delete variables.
+myNumber = "56"
+myNumber2 = int(myNumber)
+print(myNumber2 + 2)
+
+print(type(myNumber))
+print(type(myNumber2))
+
+# del(myNumber2)
+print(myNumber2)
+
+# Casting string to bool => false for empty string, true for not empty string
+print(bool("dsfsdf"))
+
+# Casting numeric to bool => false for zero, true for not zero
+print(bool(0))
+58
+<class 'str'>
+<class 'int'>
+56
+True
+False
+name = input("Enter your name: ")
+print(int(name) + 5)
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+Cell In[26], line 2
+      1 name = input("Enter your name: ")
+----> 2 print(int(name) + 5)
+
+ValueError: invalid literal for int() with base 10: 'hej'
